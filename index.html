@@ -20,11 +20,11 @@
         <label>
             <input type="tel" id="phone" placeholder="Phone"
                 style="width: 150px; height: 10px; padding: 8px; margin: 5px 0;">
-        </label><br/>
+        </label><br />
         <label>
             <input type="email" id="email" placeholder="email"
-              style="width: 200px; height: 10px; padding: 8px; margin: 5px 0;">
-          </label><br/>
+                style="width: 200px; height: 10px; padding: 8px; margin: 5px 0;">
+        </label><br />
         <button onclick="generateSignature()" style="padding: 10px 20px; font-size: 12px;">Click here</button>
     </div>
 
@@ -36,13 +36,13 @@
         function generateSignature() {
             const name = document.getElementById('name').value;
             const designation = document.getElementById('designation').value;
-            const phone1 = document.getElementById('phone').value;
+            const phone1 = document.getElementById('phone').value.trim();
             const email = document.getElementById('email').value;
             const signature = `
         <div>
             
            
-            <hr style="width:480px; border-top: 0.1px solid #ffc444; border-bottom: 0.1px solid #ffc444; border-left: none; border-right: none; height:1px; margin-left: 0px;">
+            <hr style="width:500px; border-top: 0.1px solid #ffc444; border-bottom: 0.1px solid #ffc444; border-left: none; border-right: none; height:1px; margin-left: 0px;">
             <table>
                  
                 <tr>
@@ -54,10 +54,10 @@
                             <span style="font-size: 11px; color: #303474;">${designation}</span><br/>
                             
                                 <span style="font-size: 11px; color: #303474;">Mobile |</span>
-                                <span style="font-size: 11px; color: #303474; letter-spacing:2px;">+91${phone1}</span><br/>
+                                <span style="font-size: 11px; color: #303474; letter-spacing:2px;">+91 ${phone1.slice(0, 5)} ${phone1.slice(5)}</span><br/>
                             
                                 <span style="font-size: 11px; color: #303474;">Landline |</span>
-                                <span style="font-size: 11px; color: #303474; letter-spacing:2px;">+912268996899</span><br/>
+                                <span style="font-size: 11px; color: #303474; letter-spacing:2px;">+91-22-6899 6899</span><br/>
                             
                                 <span style="font-size: 11px; color: #303474;">E-mail |</span>
                                 <span style="color: #303474;; font-size: 11px; letter-spacing:1px; display:inline-block;">${email} </span><br/>
@@ -79,60 +79,60 @@
                                 </a>                                                                            
                             </div>
 
-                            <table style="width: 100%; border-spacing:2px;">
+                            <table style="border-spacing:2px;">
                                 <tr>
-                                    <td style="padding-right: 10px; vertical-align: middle;">               
+                                    <td style="padding-right: 5px; vertical-align: middle;">               
                                         <img src="https://github.com/Right-side123/Signature/blob/main/logos/voicenew.png?raw=true" style="max-width: 20px; display: inline-block; vertical-align: middle;" />              
                                         <a href="https://www.rightside.co.in/solution/voice-solutions" target="_blank" style="color: #303474; font-size: 11px; font-weight: 600; font-family: trebuchet M; display: inline-block; vertical-align: middle;">Voice Solution</a>
                                     </td>
-                                    <td style="width: 10px;"></td> 
+                                    <td style="width: 8px;"></td> 
                                     <td style="padding-left: 0px; vertical-align: middle;"> 
                                         <img src="https://github.com/Right-side123/Signature/blob/main/logos/cemnew.png?raw=true" style="width: 20px; display: inline-block; vertical-align: middle;" />
                                         <a href="https://www.rightside.co.in/solution/crm-solutions" target="_blank" style="color: #303474; font-size: 11px; font-weight: 600; font-family: trebuchet M; display: inline-block; vertical-align: middle;">CRM Solution</a>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style="padding-right: 5px; vertical-align: middle;">
+                                    <td style="padding-right: 3px; vertical-align: middle;">
                                         <img src="https://github.com/Right-side123/Signature/blob/main/logos/customizenew.png?raw=true" style=" max-width: 20px; display: inline-block; vertical-align: middle;" />
                                         <a href="https://www.rightside.co.in/solution/customized-software-solutions" target="_blank" style="color: #303474; font-size: 11px; font-weight: 600; font-family: trebuchet M; display: inline-block; vertical-align: middle;">Customized Solution</a>
                                     </td>
-                                    <td style="width: 10px;"></td>
+                                    <td style="width: 8px;"></td>
                                     <td style="padding-left: 2px; vertical-align: middle;">                
                                         <img src="https://github.com/Right-side123/Signature/blob/main/logos/ainew.png?raw=true" style=" max-width: 20px; display: inline-block; vertical-align: middle;" />                
                                         <a href="https://www.rightside.co.in/solution/consulting-solutions" target="_blank" style="color: #303474; font-size: 11px; font-weight: 600; font-family: trebuchet M; display: inline-block; vertical-align: middle;">AI Solution</a>
                                     </td>
                                 </tr>
                             </table>
-                            <div style="margin-left:25%;">
+                            <div style="margin-left:25%; margin-bottom:4px;">
                                 <a href="https://www.linkedin.com/company/6458395" target="_blank" style="text-decoration:none; display:inline-block;">
-                                    <img src="https://github.com/Right-side123/Signature/blob/main/logos/linkedinn.png?raw=true" alt="linkedin" style="max-width: 20px;" />
+                                    <img src="https://github.com/Right-side123/Signature/blob/main/logos/linkedinn.png?raw=true" alt="linkedin" style="max-width: 20px; margin-right:4px;" />
                                 </a>
 
                                 <a href="https://skype.com" target="_blank" style="text-decoration:none; display:inline-block;">
-                                    <img src="https://github.com/Right-side123/Signature/blob/main/logos/icons8-skype-48%20(1).png?raw=true" alt="skype" style="max-width: 20px;" />
+                                    <img src="https://github.com/Right-side123/Signature/blob/main/logos/icons8-skype-48%20(1).png?raw=true" alt="skype" style="max-width: 20px; margin-right:4px;" />
                                 </a>
 
                                 <a href="https://x.com/RightSideBS" target="_blank" style="text-decoration:none; display:inline-block;">
-                                    <img src="https://github.com/Right-side123/Signature/blob/main/logos/Xpng.png?raw=true" alt="X" style="max-width: 20px;" />
+                                    <img src="https://github.com/Right-side123/Signature/blob/main/logos/Xpng.png?raw=true" alt="X" style="max-width: 20px; margin-right:4px;" />
                                 </a>
 
                                 <a href="https://www.facebook.com/rightsidebusinesssolutions/" target="_blank" style="text-decoration:none; display:inline-block;">
-                                    <img src="https://github.com/Right-side123/Signature/blob/main/logos/faceboook.png?raw=true" alt="facebook" style="max-width: 20px;" />
+                                    <img src="https://github.com/Right-side123/Signature/blob/main/logos/faceboook.png?raw=true" alt="facebook" style="max-width: 20px; margin-right:4px;" />
                                 </a>
 
                                 <a href="https://www.instagram.com/rsbspl/" target="_blank" style="text-decoration:none; display:inline-block;">
                                     <img src="https://github.com/Right-side123/Signature/blob/main/logos/instagramm.png?raw=true" alt="Instagram" style="max-width: 20px;" />
                                 </a>
                             </div>
-                              <span style="font-size: 11px; font-style:italic; font-weight: 600; color: #303474; margin-left:33%;">With You, For You.</span>
+                              <span style="font-size: 13px; font-style:italic; font-weight: 600; color: #303474; margin-left:33%;">With You, For You.</span>
                             
                         </div>
                     </td>
                 </tr>
             </table>
             <div style="line-height:14px; height:100px; margin-top:0px; margin-left:2px;">
-                <span style="font-size: 11px; font-family: trebuchet M; color: #303474; letter-spacing: 0.5px;">Corporate office | <span style="font-size: 11px;  font-family: trebuchet M; letter-spacing: 0.5px; color: #303474;">10th Floor, Aston Tower, Sundervan Complex, Shashtri Nagar, Andheri West,</span></span><br/>
-                <span style=" font-size: 11px; font-family: trebuchet M; color: #303474; letter-spacing: 0.5px;">Mumbai - 400053, Maharashtra, India.</span>
+                <span style="font-size: 11px; font-family: trebuchet M; color: #303474; letter-spacing: 0.5px;">Corporate office | <span style="font-size: 11px;  font-family: trebuchet M; letter-spacing: 0.5px; color: #303474;">10th Floor, Aston Tower, Sundervan Complex, Shashtri Nagar,</span></span><br/>
+                <span style=" font-size: 11px; font-family: trebuchet M; color: #303474; letter-spacing: 0.5px;"> Andheri West, Mumbai - 400053, Maharashtra, India.</span>
             </div>
         </div>
       `;
